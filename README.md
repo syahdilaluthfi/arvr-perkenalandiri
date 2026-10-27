@@ -1,7 +1,7 @@
 # Tugas Praktikum: Scene Perkenalan Diri (WebXR / A-Frame)
 
-* **Nama:** [NAMA ANDA]
-* **NIM:** [NIM ANDA]
+* **Nama:** [Syadila Ayu Luthfiyyah]
+* **NIM:** [2409020064]
 * **Mata Kuliah:** Augmented dan Virtual Reality
 * **Link Demo GitHub Pages:** https://[username-github-kamu].github.io/[nama-repository-kamu]/
 
