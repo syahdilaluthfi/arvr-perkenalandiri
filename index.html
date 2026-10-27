@@ -1,0 +1,110 @@
+
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Praktikum 1 - Lima Bangun Ruang Bergerak</title>
+
+  <script src="https://aframe.io/releases/1.7.1/aframe.min.js"></script>
+</head>
+
+<body>
+  <a-scene>
+
+    <!-- Pencahayaan -->
+    <a-entity light="type: ambient; intensity: 1.2"></a-entity>
+    <a-entity light="type: directional; intensity: 1.5"
+              position="-3 5 2"></a-entity>
+
+    <!-- 1. Kubus - Pink -->
+    <a-box
+      position="-3 0.8 -4"
+      width="1.1" height="1.1" depth="1.1"
+      color="#FFB6D9"
+      animation="property: rotation; to: 360 360 0;
+                 loop: true; dur: 6000; easing: linear">
+    </a-box>
+
+    <!-- 2. Bola - Biru Muda -->
+    <a-sphere
+      position="-1.5 0.8 -4"
+      radius="0.6"
+      color="#ADDFFF"
+      animation="property: position; to: -1.5 1.5 -4;
+                 dir: alternate; loop: true;
+                 dur: 1500; easing: easeInOutSine">
+    </a-sphere>
+
+    <!-- 3. Tabung - Cokelat Muda -->
+    <a-cylinder
+      position="0 0.8 -4"
+      radius="0.5"
+      height="1.4"
+      color="#D2B48C"
+      animation="property: rotation; to: 0 360 0;
+                 loop: true; dur: 5000; easing: linear">
+    </a-cylinder>
+
+    <!-- 4. Kerucut - Hijau Muda -->
+    <a-cone
+      position="1.5 0.8 -4"
+      radius-bottom="0.6"
+      radius-top="0"
+      height="1.3"
+      color="#B7E4C7"
+      animation="property: position; to: 1.5 1.4 -4;
+                 dir: alternate; loop: true;
+                 dur: 1800; easing: easeInOutSine">
+    </a-cone>
+
+    <!-- 5. Torus - Kuning Muda -->
+    <a-torus
+      position="3 1 -4"
+      radius="0.5"
+      radius-tubular="0.12"
+      color="#FFF0A8"
+      animation="property: rotation; to: 360 360 360;
+                 loop: true; dur: 7000; easing: linear">
+    </a-torus>
+
+    <!-- Lantai -->
+    <a-plane
+      position="0 0 -4"
+      rotation="-90 0 0"
+      width="14"
+      height="14"
+      color="#E8E5E0">
+    </a-plane>
+
+    <!-- Teks perkenalan: ganti dengan identitas kamu -->
+    <a-text
+      value="RUANG BANGUN RUANG 3D"
+      position="0 2.8 -4"
+      align="center"
+      color="#444444"
+      width="7">
+    </a-text>
+
+    <a-text
+      value="Nama: Syadila Ayu Luthfiyyah | NIM: 2409020064"
+      position="0 2.4 -4"
+      align="center"
+      color="#444444"
+      width="6">
+    </a-text>
+
+    <!-- Langit -->
+    <a-sky color="#F7F3FA"></a-sky>
+
+    <!-- Kamera dan kontrol navigasi -->
+    <a-entity
+      camera
+      look-controls
+      wasd-controls
+      position="0 1.6 0">
+    </a-entity>
+
+  </a-scene>
+</body>
+</html>
