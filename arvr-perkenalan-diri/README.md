@@ -62,7 +62,7 @@ Di repository GitHub pilih **Settings > Pages > Build and deployment**. Set:
 
 Klik **Save**, kemudian buka `https://github.com/syahdilaluthfi/ar-vr-perkenalan-diri.git` setelah deployment berhasil. URL akan mengikuti username dan nama repository asli.
 
-## Catatan
+## Catatan Tambahan
 
 - Nama file utama wajib **index.html**, bukan `index.html.txt`.
 - Jika perintah `git` tidak dikenali, instal Git lalu buka ulang VS Code.
